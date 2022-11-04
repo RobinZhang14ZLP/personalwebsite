@@ -3,13 +3,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Robin (Luoping) Zhang</title>
+  <title>Robin (Luoping) Zhang's Personal Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+  <!-- Nav Bar -->
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <a class="navbar-brand" href="index.html"><span><img class="fav-img" src="favicon.ico" alt="fav-img"></span></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#profile-id">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-id">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-id">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
   <div class="top-container">
     <img class="top-cloud" src="images/cloud.png" alt="cloud">
     <div class="title-text">
@@ -21,13 +56,13 @@
   </div>
 
   <div class="middle-container">
-    <div class="profile">
+    <div class="profile" id="profile-id">
       <img class="profile-img" src="images/profile.jpg" alt="robin-profile-img">
       <h2>Hello.</h2>
       <p class="intro">I am a student from <a class="p-link" href="https://www.columbia.edu/">Columbia University</a> majoring <a class="p-link" href="https://www.cs.columbia.edu/">Computer Science</a>. I'm also a web developer. I love music 🎸 and video games 🎮.</p>
     </div>
     <hr>
-    <div class="skills">
+    <div class="skills" id="skills-id">
       <h2>My Skills.</h2>
       <div class="skill-row">
         <img class="code-img" src="images/code.gif" alt="code-img">
@@ -45,7 +80,7 @@
       </div>
     </div>
     <hr>
-    <div class="contact-me">
+    <div class="contact-me" id="contact-id">
       <h2>Get In Touch</h2>
       <h3>If you love the Beatles as much as I do.</h3>
       <p class="contact-message">Love the Beatles as much as I do? Let's talk about how awesome they are! We can code while we binge listening to their songs!</p>
